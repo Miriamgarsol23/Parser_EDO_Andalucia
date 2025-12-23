@@ -1,6 +1,3 @@
-#line 2 "analizador.cpp"
-
-#line 4 "analizador.cpp"
 
 #define  YY_INT_ALIGNED short int
 
