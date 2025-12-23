@@ -33,7 +33,7 @@ En Ubuntu/Debian puedes instalarlo con:
 sudo apt-get install flex g++ make curl
 ```
 
-⚙️ Instalación y Ejecución
+## ⚙️ Instalación y Ejecución
 Sigue estos pasos para poner en marcha el analizador:
 
 1. Clonar el repositorio
@@ -68,7 +68,7 @@ Para borrar los ejecutables generados y eliminar el fichero de datos data.html (
 
 make clean
 ```
-📂 Estructura del Proyecto
+## 📂 Estructura del Proyecto
 El repositorio está organizado de la siguiente manera:
 
 analizador.l: Archivo principal. Contiene las definiciones regulares de Flex, las reglas de tokenización y la lógica de negocio en C++ (incluyendo el main).
@@ -79,11 +79,11 @@ docs/: Directorio que contiene la documentación y la memoria detallada de la pr
 
 .gitignore: Configuración para excluir binarios y archivos temporales del control de versiones.
 
-✒️ Autores
+## ✒️ Autores
 Trabajo realizado por:
 
 Miriam García Sollo
 
 Juana María Rascón Contreras
 
-Este proyecto ha sido desarrollado con fines puramente académicos para la asignatura de Modelos de Computación.
+> Este proyecto ha sido desarrollado con fines puramente académicos para la asignatura de Modelos de Computación.
