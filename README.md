@@ -60,7 +60,7 @@ Inicia el programa. Si es la primera vez, te preguntará si deseas descargar los
 make run
 ```
 
-# O alternativamente: ./ANALIZADOR
+ O alternativamente: ./ANALIZADOR
 4. Limpiar (Opcional)
 Para borrar los ejecutables generados y eliminar el fichero de datos data.html (útil para forzar una nueva descarga):
 
