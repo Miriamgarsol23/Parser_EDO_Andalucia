@@ -31,3 +31,51 @@ Para ejecutar este proyecto necesitas un entorno Linux/Unix con:
 En Ubuntu/Debian puedes instalarlo con:
 ```bash
 sudo apt-get install flex g++ make curl
+⚙️ Instalación y Ejecución
+Sigue estos pasos para poner en marcha el analizador:
+
+1. Clonar el repositorio
+Descarga el código fuente a tu máquina local (asegúrate de usar tu usuario real):
+
+Bash
+
+git clone [https://github.com/TU_USUARIO/EDO-Andalucia-Parser.git](https://github.com/TU_USUARIO/EDO-Andalucia-Parser.git)
+cd EDO-Andalucia-Parser
+2. Compilar
+Ejecuta el comando make en la raíz del proyecto. Esto invocará a flex para generar el código intermedio y a g++ para crear el ejecutable final ANALIZADOR.
+
+Bash
+
+make
+3. Ejecutar
+Inicia el programa. Si es la primera vez, te preguntará si deseas descargar los datos oficiales.
+
+Bash
+
+make run
+# O alternativamente: ./ANALIZADOR
+4. Limpiar (Opcional)
+Para borrar los ejecutables generados y eliminar el fichero de datos data.html (útil para forzar una nueva descarga):
+
+Bash
+
+make clean
+📂 Estructura del Proyecto
+El repositorio está organizado de la siguiente manera:
+
+analizador.l: Archivo principal. Contiene las definiciones regulares de Flex, las reglas de tokenización y la lógica de negocio en C++ (incluyendo el main).
+
+Makefile: Script de configuración para automatizar la compilación y limpieza del proyecto.
+
+docs/: Directorio que contiene la documentación y la memoria detallada de la práctica.
+
+.gitignore: Configuración para excluir binarios y archivos temporales del control de versiones.
+
+✒️ Autores
+Trabajo realizado por:
+
+Miriam García Sollo
+
+Juana María Rascón Contreras
+
+Este proyecto ha sido desarrollado con fines puramente académicos para la asignatura de Modelos de Computación.
