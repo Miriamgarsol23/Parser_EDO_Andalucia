@@ -1,2 +1,33 @@
-# Parser_EDO_Andalucia
-Proyecto en C++, usando Flex para la asignatura Modelos de Computación UGR.
+# Analizador Léxico de Datos Epidemiológicos de Andalucía (EDO) 🦠📊
+
+> Práctica de la asignatura **Modelos de Computación**.
+> **Universidad de Granada (UGR)** - Doble Grado en Ingeniería Informática y Matemáticas.
+
+Este proyecto implementa un escáner léxico avanzado utilizando **Flex** y **C++** para automatizar la extracción, filtrado y estructuración de datos sobre **Enfermedades de Declaración Obligatoria (EDO)** desde el portal oficial de la Junta de Andalucía.
+
+## 🚀 Funcionalidades
+
+* **Adquisición Dinámica:** Integra `curl` para descargar automáticamente los datos más recientes desde el servidor de la Junta (`STPivot.jsp`) si no se detecta un fichero local.
+* **Parsing de Datos Crudos:** Analiza el formato de exportación XML/Pivot (basado en atributos `caption` y `val`) en lugar de HTML visual.
+* **Filtro "Nuclear":** Implementa lógica semántica en C++ para discriminar entre datos epidemiológicos reales y metadatos/ruido (cabeceras, totales, etc.).
+* **Autómata Implícito:** Reconstruye la estructura tabular (12 columnas: Hombres/Mujeres por edad) a partir de un flujo lineal de tokens.
+* **Interfaz CLI:** Menú interactivo en terminal para consultar estadísticas detalladas por enfermedad.
+
+## 🛠️ Tecnologías Utilizadas
+
+* **Flex (Fast Lexical Analyzer Generator):** Para la tokenización y definición de reglas léxicas.
+* **C++ (STL):** Para la lógica de negocio, estructuras de datos (`std::vector`) y gestión de flujos.
+* **cURL:** Para la peticiones HTTP al servidor de datos.
+* **Make:** Para la automatización de la compilación.
+
+## 📋 Requisitos
+
+Para ejecutar este proyecto necesitas un entorno Linux/Unix con:
+* `g++`
+* `flex`
+* `make`
+* `curl`
+
+En Ubuntu/Debian puedes instalarlo con:
+```bash
+sudo apt-get install flex g++ make curl
